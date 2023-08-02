@@ -9,7 +9,7 @@
     <el-input placeholder="Please input password" v-model="Pinput" show-password></el-input>
   </el-form>
     <ul>
-      <el-button type="primary">Login</el-button>
+      <router-link to="/DataView"><el-button type="primary">Login</el-button></router-link>
     </ul>
   </div>
 </template>
@@ -42,13 +42,5 @@ li {
 }
 a {
   color: #42b983;
-}
-.el-form{
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-}
-div{
-  padding: 1%;
 }
 </style>

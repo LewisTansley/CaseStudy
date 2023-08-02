@@ -1,6 +1,5 @@
 <template>
   <div class="addform">
-    <img alt="Vue logo" src="../assets/logo.png"/>
     <AddForm/>
   </div>
 </template>

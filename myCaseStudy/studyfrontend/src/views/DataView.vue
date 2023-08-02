@@ -1,5 +1,28 @@
 <template>
   <div class="dataview">
-    <h1>This is a data page</h1>
+    <MyBook/>
+    <GreyBook/>
   </div>
 </template>
+
+<script>
+import MyBook from '@/components/MyBook.vue'
+import GreyBook from '@/components/GreyBook.vue'
+export default {
+  name: 'My-Books',
+  components: {
+    MyBook,
+    GreyBook
+  }
+}
+
+</script>
+
+<style>
+
+div{
+  padding: 1%;
+}
+
+
+</style>
