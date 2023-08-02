@@ -4,7 +4,7 @@
       <el-card :body-style="{ padding: '0px' }">
         <img src="" class="image">
         <div style="padding: 14px;">
-          <span>ADD NEW ENTRY</span>
+          <h1>Add new Book</h1>
           <div class="bottom clearfix">
             <p class="greyText"></p>
             <p class="greyText"></p>
