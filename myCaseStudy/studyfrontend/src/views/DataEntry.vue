@@ -1,6 +1,7 @@
 <template>
   <div class="addform">
-    <nav><router-link to="/DataView">Back</router-link></nav>
+    <nav><router-link to="/">Logout</router-link></nav>
+    <img alt="Vue logo" src="../assets/logo.png">
     <AddForm/>
   </div>
 </template>
