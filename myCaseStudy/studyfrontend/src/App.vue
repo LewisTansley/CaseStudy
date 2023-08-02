@@ -1,6 +1,12 @@
+<!--
+  I would add a <script> at the end of this file (or ideally the main template file) 
+  to handle axios.get requests.
+  The get request will point the url end point in urls.py, which calls the function in views.py.
+
+  
+-->
 <template>
   <div id="app">
-
     <router-view/>
   </div>
 </template>

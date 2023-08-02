@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# import functions from views as defined in points 1 & 2 above
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
+    # Add a URL to urlpatterns:  path('', views.home, name='home')
 ]
