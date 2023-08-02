@@ -13,10 +13,10 @@
       <p v-if="file">{{file.name}}</p>
       <el-row>
         <el-col :span="12">
-          <router-link to="/DataView"><el-button type="primary">cancel</el-button></router-link>
+          <router-link to="/DataView"><el-button type="danger">cancel</el-button></router-link>
         </el-col>
         <el-col :span="12">
-          <el-button type="primary">SAVE</el-button>
+          <el-button type="success">save</el-button>
         </el-col>
       </el-row>
     </el-form>
