@@ -8,7 +8,8 @@
       <el-input placeholder="book author" v-model="authorInput"></el-input>
       <el-input placeholder="book title" v-model="titleInput"></el-input>
       <el-input placeholder="book descriptions" v-model="descInput"></el-input>
-      <p>Book Cover Image: <file-select v-model="file"></file-select></p>
+      <p>Attach Cover Image:</p>
+      <file-select v-model="file"></file-select>
       <p v-if="file">{{file.name}}</p>
       <el-row>
         <el-col :span="12">

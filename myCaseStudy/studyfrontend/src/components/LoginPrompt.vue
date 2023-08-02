@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1></h1>
+
+    <h1>Log In</h1>
     <p>
       Please enter your credentials below.
     </p>
@@ -42,5 +43,13 @@ li {
 }
 a {
   color: #42b983;
+}
+.el-form{
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div{
+  padding: 1%;
 }
 </style>
