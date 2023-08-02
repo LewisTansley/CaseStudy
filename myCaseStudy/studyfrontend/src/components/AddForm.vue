@@ -10,10 +10,15 @@
       <el-input placeholder="book descriptions" v-model="descInput"></el-input>
       <p>Book Cover Image: <file-select v-model="file"></file-select></p>
       <p v-if="file">{{file.name}}</p>
-  </el-form>
-    <ul>
-      <el-button type="primary">SAVE</el-button>
-    </ul>
+      <el-row>
+        <el-col :span="12">
+          <router-link to="/DataView"><el-button type="primary">cancel</el-button></router-link>
+        </el-col>
+        <el-col :span="12">
+          <el-button type="primary">SAVE</el-button>
+        </el-col>
+      </el-row>
+    </el-form>
   </div>
 </template>
 

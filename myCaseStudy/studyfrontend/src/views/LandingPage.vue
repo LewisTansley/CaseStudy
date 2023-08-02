@@ -2,6 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <h1>Library of Babel</h1>
+    <RouterLink to="/LoginPage"><el-button type="primary">Log In</el-button></RouterLink>
   </div>
 </template>
 
@@ -9,7 +10,7 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Login-Page',
+  name: 'Landing-Page',
   components: {
   }
 }

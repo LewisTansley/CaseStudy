@@ -1,5 +1,6 @@
 <template>
   <div class="addform">
+    <nav><router-link to="/DataView">Back</router-link></nav>
     <AddForm/>
   </div>
 </template>

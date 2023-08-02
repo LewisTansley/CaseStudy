@@ -1,17 +1,22 @@
 <template>
   <div class="dataview">
-    <MyBook/>
+    <nav><router-link to="/">Log Out</router-link></nav>
     <GreyBook/>
+    <el-row v-for="(o, index) in 3" :key="o" :offset="index > 0 ? 3 : 0">
+      <MyBookShelf/>
+    </el-row>
+
+
   </div>
 </template>
 
 <script>
-import MyBook from '@/components/MyBook.vue'
+import MyBookShelf from '@/components/MyBookShelf.vue'
 import GreyBook from '@/components/GreyBook.vue'
 export default {
   name: 'My-Books',
   components: {
-    MyBook,
+    MyBookShelf,
     GreyBook
   }
 }
@@ -19,10 +24,5 @@ export default {
 </script>
 
 <style>
-
-div{
-  padding: 1%;
-}
-
 
 </style>
