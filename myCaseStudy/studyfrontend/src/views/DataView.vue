@@ -5,7 +5,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <GreyBook/>
     <el-row v-for="(o, index) in books" :key="o" :offset="index > 0 ? 3 : 0">
-      <MyBookShelf/>
+      <MyBook><books/></MyBook>
     </el-row>
 
 
@@ -13,16 +13,15 @@
 </template>
 
 <script>
-import MyBookShelf from '@/components/MyBookShelf.vue'
+import MyBook from '@/components/MyBook.vue'
 import GreyBook from '@/components/GreyBook.vue'
 import axios from 'axios';
 export default {
   name: 'My-Books',
   components: {
-    MyBookShelf,
+    MyBook,
     GreyBook,
-    books: [],
-
+    books: []
   },
   methods: {
     loadBooks: function() {

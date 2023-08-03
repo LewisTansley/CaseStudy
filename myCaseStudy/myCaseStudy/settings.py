@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'api',
+    'api.urls',
     'rest_framework',
-    'rest_auth'
 ]
 AUTH_USER_MODEL = 'api.urls'
 REST_FRAMEWORK = {
@@ -48,7 +48,6 @@ REST_FRAMEWORK = {
       'rest_framework.permissions.IsAuthenticated',
   ),
   'DEFAULT_AUTHENTICATION_CLASSES': (
-      'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
       'rest_framework.authentication.SessionAuthentication',
       'rest_framework.authentication.BasicAuthentication',
   ),

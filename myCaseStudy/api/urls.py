@@ -6,5 +6,4 @@ from . import views
 
 urlpatterns = [
     path('', views.getData),
-    path('auth/', include('rest_auth.urls')),
 ]

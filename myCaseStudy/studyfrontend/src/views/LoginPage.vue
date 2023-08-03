@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <nav><router-link></router-link></nav>
     <img alt="Vue logo" src="../assets/logo.png">
     <LoginPrompt/>
   </div>

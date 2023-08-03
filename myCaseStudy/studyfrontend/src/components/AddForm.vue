@@ -16,7 +16,7 @@
           <router-link to="/DataView"><el-button type="danger">cancel</el-button></router-link>
         </el-col>
         <el-col :span="12">
-          <el-button type="success">save</el-button>
+          <el-button type="success" function="addBook">save</el-button>
         </el-col>
       </el-row>
     </el-form>
@@ -34,13 +34,14 @@ export default {
   name: 'AddForm',
   data() {
       return {
-        authorInput:'',
         titleInput: '',
-        descInput:''        
+        authorInput:'',
+        descInput:'',        
+        file:''
       }
     },
   addBook: function() {
-    axios.post('/api/books/', {note: this.newBook}).then(
+    axios.post('/api/books/', {book: this.newBook}).then(
       response => {
         this.newBook = "";
         this.books.push(response.data);

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.books import  User, books
+from myCaseStudy.models import  User, Book
 class UserSerializer(serializers.ModelSerializer):
   class Meta:
       model = User
@@ -12,4 +12,4 @@ class BookSerializer(serializers.ModelSerializer):
     bookCover = serializers.ImageField()
     class Meta:
         model = Book
-        fields = ['authorInput','titleInput','descInput']
+        fields = "__all__"
