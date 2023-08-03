@@ -13,6 +13,7 @@ export default {
   name: 'DataEntry',
   components: {
     AddForm
-  }
+  },
+
 }
 </script>

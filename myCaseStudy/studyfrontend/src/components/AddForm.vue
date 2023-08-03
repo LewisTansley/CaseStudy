@@ -25,6 +25,8 @@
 
 <script>
 import FileSelect from '@/components/FileSelect.vue'
+import axios from 'axios';
+
 export default {
   components: {
     FileSelect
@@ -36,7 +38,15 @@ export default {
         titleInput: '',
         descInput:''        
       }
-    }
+    },
+  addBook: function() {
+    axios.post('/api/books/', {note: this.newBook}).then(
+      response => {
+        this.newBook = "";
+        this.books.push(response.data);
+      }
+    );
+  }
 }
 </script>
 
