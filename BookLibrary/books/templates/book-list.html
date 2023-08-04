@@ -1,0 +1,13 @@
+<h2>Your Books</h2>
+<ul>
+    {% for book in books %}
+    <img src="{{ book.book_cover.url }}" alt="{{ book.title }} Cover" width="150">
+        <li>{{ book.title }} by {{ book.author }}</li>
+        <li>Blurb: {{ book.description }}
+            <hr>
+    {% empty %}
+        <li>No books uploaded yet.</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'logout' %}">Logout</a>
+<a href="{% url 'upload_book' %}">Upload</a>
