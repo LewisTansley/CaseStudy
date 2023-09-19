@@ -8,6 +8,7 @@
     <el-form @submit.prevent="submit">
       <el-input placeholder="Please input username" v-model="form.username"></el-input>
       <el-input placeholder="Please input password" v-model="form.password" show-password></el-input>
+      <RouterLink to="/DataView"><el-button type="primary">Log In</el-button></RouterLink>
       <el-button type="submit">submit</el-button>
       <p v-if="showError" id="error">Username or Password is incorrect</p>
     </el-form>
